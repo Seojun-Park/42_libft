@@ -7,6 +7,7 @@ What is libft?
 Disclaimer: 42 makes us do this as a first project as a cadet, so we can have a deeper understanding of data structures and basic algorithms. At 42, we're not allowed to use some standard libraries on our projects, so we have to keep growing this library with our own functions as we go further in the program.
 
 What's in it?
+
 As you can see from the Project instructions, there are 4 sections:
 
 Libc Functions: Some of the standard C functions
