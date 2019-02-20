@@ -6,14 +6,14 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 14:58:36 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/17 13:59:50 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 22:03:14 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char * ft_strnew(size_t size)
+char	*ft_strnew(size_t size)
 {
-	return(ft_memalloc(size + 1));
+	return (ft_memalloc(size + 1));
 }

@@ -6,16 +6,16 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 21:07:49 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/13 21:12:49 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 21:41:42 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl_fd(char const *s, int fd)
+void	ft_putendl_fd(char const *s, int fd)
 {
-	if(s == NULL)
+	if (s == NULL)
 		return ;
 	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n',fd);
+	ft_putchar_fd('\n', fd);
 }

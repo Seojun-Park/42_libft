@@ -6,20 +6,20 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 18:45:45 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/12 18:47:50 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 21:53:33 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int i;
 
 	i = 0;
-	while(src[i] != '\0')
+	while (src[i] != '\0')
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return(dst);
+	return (dst);
 }

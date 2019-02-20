@@ -6,13 +6,13 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 12:42:22 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/18 00:10:48 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 21:39:13 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }

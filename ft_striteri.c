@@ -6,21 +6,20 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 17:06:35 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/13 17:11:00 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 21:56:54 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int i;
 
 	i = 0;
-	if(s == '\0')
+	if (s == '\0')
 		return ;
-	while(*s)
+	while (*s)
 	{
-		f(i,s);
+		f(i, s);
 		s++;
 		i++;
 	}
