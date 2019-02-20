@@ -6,17 +6,17 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 12:48:26 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 17:00:43 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 17:02:51 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_atoi(const char *str)
 {
-	int result;
+	int res;
 	int sign;
 	int i;
 
-	result = 0;
+	res = 0;
 	sign = 1;
 	while(str[i] == ' ' || str[i] == '\t' || str[i] == '\v' || str[i] == '\r' || str[i] == '\f' || str[i] == '\n')
 		i++;
