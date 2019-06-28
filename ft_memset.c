@@ -6,11 +6,13 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 16:12:21 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 21:36:38 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 23:14:23 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

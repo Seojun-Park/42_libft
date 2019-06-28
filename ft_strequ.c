@@ -6,7 +6,7 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 13:36:39 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 21:54:55 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/20 00:11:59 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 int	ft_strequ(char const *s1, char const *s2)
 {
 	if (s1 == NULL || s2 == NULL)
+		return (0);
+	if (*s1 != *s2)
 		return (0);
 	while (*s1 == *s2 && *s1 != '\0')
 	{

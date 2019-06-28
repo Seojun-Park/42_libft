@@ -6,7 +6,7 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 16:49:55 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 21:55:10 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 23:47:04 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striter(char *s, void (*f)(char *))
 {
-	if (s == NULL)
+	if (s == NULL || f == NULL)
 		return ;
 	while (*s)
 	{

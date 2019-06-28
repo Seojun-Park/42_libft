@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_absolute.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/12 18:45:45 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 23:19:06 by jinpark          ###   ########.fr       */
+/*   Created: 2019/06/24 17:38:51 by jinpark           #+#    #+#             */
+/*   Updated: 2019/06/24 17:39:21 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+int		ft_absolute(int i)
 {
-	int i;
-
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (dst);
+	if (i < 0)
+		i = i * -1;
+	return (i);
 }

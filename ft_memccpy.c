@@ -6,11 +6,13 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 16:59:09 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 21:32:22 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 23:13:22 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

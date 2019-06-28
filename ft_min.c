@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_min.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/12 18:45:45 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 23:19:06 by jinpark          ###   ########.fr       */
+/*   Created: 2019/06/25 23:09:43 by jinpark           #+#    #+#             */
+/*   Updated: 2019/06/25 23:10:10 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+int		ft_min(int a, int b)
 {
-	int i;
-
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (dst);
+	if (b > a)
+		return (a);
+	return (b);
 }

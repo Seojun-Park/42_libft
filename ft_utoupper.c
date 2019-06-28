@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_utoupper.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/12 18:45:45 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 23:19:06 by jinpark          ###   ########.fr       */
+/*   Created: 2019/06/16 19:08:45 by jinpark           #+#    #+#             */
+/*   Updated: 2019/06/16 19:08:47 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+char    *ft_utoupper(char *s)
 {
-	int i;
+    int i;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (dst);
+    i = -1;
+    while (s[++i] != '\0')
+    {
+        if (s[i] >= 'a' && s[i] <= 'z')
+            s[i] = ((s[i] - 'a') + 'A');
+    }
+    return (s);
 }

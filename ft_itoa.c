@@ -6,14 +6,14 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/17 19:53:32 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 21:26:05 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/04/08 21:11:31 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-int		get_len(int n)
+static int		get_len(int n)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ int		get_len(int n)
 	return (i);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	int		len;
 	char	*new;

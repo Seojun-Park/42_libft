@@ -6,7 +6,7 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/19 14:53:37 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 21:29:50 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/20 00:10:36 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,19 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	new = (t_list *)ft_memalloc(sizeof(t_list));
 	if (new == NULL)
 		return (NULL);
-	if (content == 0)
+	if (content == NULL)
 	{
 		new->content_size = 0;
-		new->next = 0;
+		new->next = NULL;
 	}
 	else
 	{
-		new->content = ft_memalloc(content_size);
-		if (new->content == 0)
-			return (0);
+		new->content = (t_list *)ft_memalloc(content_size);
+		if (new->content == NULL)
+			return (NULL);
 		ft_memcpy(new->content, content, content_size);
+		new->content_size = content_size;
+		new->next = NULL;
 	}
 	return (new);
 }

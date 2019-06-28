@@ -6,14 +6,14 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/14 18:22:38 by jinpark           #+#    #+#             */
-/*   Updated: 2019/02/19 22:25:21 by jinpark          ###   ########.fr       */
+/*   Updated: 2019/02/19 23:40:20 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-size_t	count_words(char const *s, char c)
+static size_t	count_words(char const *s, char c)
 {
 	size_t cnt;
 
@@ -32,7 +32,7 @@ size_t	count_words(char const *s, char c)
 	return (cnt);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	char	**a;
 	size_t	inside_a_word;

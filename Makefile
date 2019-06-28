@@ -6,10 +6,9 @@
 #    By: jinpark <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/17 14:30:59 by jinpark           #+#    #+#              #
-#    Updated: 2019/02/19 22:51:32 by jinpark          ###   ########.fr        #
+#    Updated: 2019/06/25 23:24:54 by jinpark          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
 
 NAME=libft.a
 HEADER=-I libft.h
@@ -25,7 +24,12 @@ SRC=ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
 	ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strlcat.c\
 	ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_putchar.c ft_strdup.c\
 	ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c ft_putstr.c\
-	ft_putendl_fd.c ft_count_word.c ft_iswhitespace.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_putnbr_fd.c ft_itoa.c ft_lstmap.c
+	ft_putendl_fd.c ft_count_word.c ft_iswhitespace.c ft_lstnew.c ft_lstdelone.c\
+	ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_putnbr_fd.c ft_itoa.c ft_lstmap.c\
+	ft_utoupper.c ft_printf.c ops_func.c ops_func2.c ops_func3.c ops_func4.c\
+	ops_func5.c ops_func6.c ops_func7.c c_specifier.c colour_print.c di_specifier.c\
+	f_print.c f_specifier.c formatting.c ox_specifier.c s_specifier.c u_specifier.c\
+	get_next_line.c ft_absolute.c ft_max.c ft_min.c ft_strmerge.c
 
 OBJ=$(SRC:.c=.o)
 
