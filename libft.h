@@ -6,7 +6,7 @@
 /*   By: jinpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/12 21:00:05 by jinpark           #+#    #+#             */
-/*   Updated: 2019/06/25 23:20:40 by jinpark          ###   ########.fr       */
+/*   Updated: 2020/01/07 18:21:59 by jinpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -217,5 +217,8 @@ int					get_next_line_link(int const fd, char **line);
 int					ft_max(int a, int b);
 int					ft_min(int a, int b);
 char				*ft_strmerge(char *a, char *b);
+int					ft_count_if(char **tab, int(*f)(char *));
+void				ft_foreach(int *tab, int length, void(*f)(int));
+int					*ft_range(int min, int max);
 
 #endif
